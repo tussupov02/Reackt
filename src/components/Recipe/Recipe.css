@@ -1,0 +1,9 @@
+.recipe{
+    width: 400px;
+    height: 500px;
+    background: aquamarine;
+}
+.recipe img{
+    width: 150px;
+    height: 150px;
+}

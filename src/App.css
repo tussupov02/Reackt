@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  max-width: 1440px;
+}
+form{
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+input{
+  background: aquamarine;
+  width: 400px;
+  height: 50px;
+  font-size: 44px;
+  margin-right: 10px;
+}
+button{
+  background: aquamarine;
+  width: 100px;
+  height: 50px;
+}
+body{
+  background-color: aqua;
+}
+.recipes{
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
