@@ -6,8 +6,8 @@ export default function ExpenseList() {
 
   return (
     <ul className="list-group">
-      {expenses.map((expense) => (
-        <ExpenseItem id={expense.id} name={expense.name} cost={expense.cost} />
+      {expenses.map((expense, index) => (
+        <ExpenseItem key={index} id={expense.id} name={expense.name} cost={expense.cost} />
       ))}
     </ul>
   );

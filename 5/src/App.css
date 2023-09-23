@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+body{
+  /* background-image: url("../public/img/books.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background: rgb(116, 131, 242);
+}
+
+
+.container{
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__title h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.container__title img{
+  width: 100px;
+}
+.container__title p{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+.books__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+
+
+
+.wishlist{
+  display: flex;
+  align-items: center ;
+}
+.wishlist img{
+  opacity: 0.8;
+  width: 48px;
+  height: 48px;
+}
+.wishlist :hover{
+  opacity: 1;
+}
+@media (max-width:1300px){
+  .container{
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__title p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+  }
+  .books__list{
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}
+@media (max-width:600px) {
+  .wishlist img{
+    opacity: 0.8;
+    width: 28px;
+    height: 28px;
+  }
+}

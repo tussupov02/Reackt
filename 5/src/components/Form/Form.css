@@ -1,0 +1,121 @@
+form{
+    width: 600px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__book{
+    width: 600px;
+    height: 80px;
+    display: flex; 
+    align-items: center;
+    background: aliceblue;
+    border-radius: 25px;
+}
+.form__book input{
+    border-radius: 25px;
+    width: 400px;
+    height: 80px;
+    border: none;
+    font-size: 16px;
+    color: black;
+    padding-left: 15px;
+    background: aliceblue;
+    outline: none;
+}
+form h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 98px;
+    font-weight: 500;
+}
+.form__book button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: rgb(223, 93, 93);
+    border-radius: 7px;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 700;
+}
+form button:disabled{
+    opacity: 0.4;  
+}
+@media (max-width:1350px) {
+    form{
+        width: 400px;
+        height: 45px;
+    }
+    form h2{
+        font-size: 50px;
+    }
+    form input{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        border: none;
+        font-size: 16px;
+        color: black;
+        padding-left: 15px;
+    }
+    form button{
+        left: 450px;
+        width: 150px;
+        height: 40px;
+        border: none;
+        background: rgb(223, 93, 93);
+        border-radius: 7px;
+        color: aliceblue;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+@media (max-width:450px) {
+    form{
+        width: 300px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__book{
+        width: 300px;
+        height: 40px;
+        display: flex; 
+        align-items: center;
+        background: aliceblue;
+        border-radius: 25px;
+    }
+    .form__book input{
+        border-radius: 25px;
+        width: 200px;
+        height: 40px;
+        border: none;
+        font-size: 16px;
+        color: black;
+        padding-left: 15px;
+        background: aliceblue;
+        outline: none;
+    }
+    form h2{
+        text-align: center;
+        color: aliceblue;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .form__book button{
+        width: 70px;
+        height: 25px;
+        border: none;
+        background: rgb(223, 93, 93);
+        border-radius: 7px;
+        color: aliceblue;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    form button:disabled{
+        opacity: 0.4;  
+    }
+}
