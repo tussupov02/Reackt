@@ -1,13 +1,18 @@
-export default function Input({ idInput, onChange, placeholder, nameInput, InputValue }) {
+export default function Input({ submitted, placeholder, setInputValue, inputValue }) {
   return (
+    <>
     <input
-      value={InputValue}
-      onChange={onChange}
-      id={idInput}
-      class="form-field"
+      value={inputValue}
+      onChange={(e) => {
+        setInputValue(e.target.value);
+      }}
+      className="form-field"
       type="text"
       placeholder={placeholder}
-      name={nameInput}
     />
+    {submitted && !inputValue ? (
+      <span>Please enter a {placeholder}</span>
+    ) : null}
+  </>
   );
 }

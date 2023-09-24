@@ -3,27 +3,35 @@ import Form from "./components/Form/Form";
 import "./index.css";
 
 export default function App() {
-  const [values, setValues] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-  });
+  const [firstName, setfirstName] = useState("");
+  const [lastName, setlastName] = useState("");
+  const [email, setemail] = useState("");
+
+
+  const sample=[
+    {
+      inputValue: firstName,
+      placeholder: "First Name",
+      name: setfirstName,
+    },
+    {
+      inputValue: lastName,
+      placeholder: "Last Name",
+      name: setlastName,
+    },
+    {
+      inputValue: email,
+      placeholder: "Email",
+      name: setemail,
+    },
+  ]
 
   const [submitted, setSubmitted]=useState(false);
   const [valid, setValid] = useState(false)
 
-  const handleFirstNameInputChange=(e)=>{
-    setValues({...values, firstName: e.target.value})
-  }
-  const handleLastNameInputChange=(e)=>{
-    setValues({...values, lastName: e.target.value})
-  }
-  const handleEmailInputChange=(e)=>{
-    setValues({...values, email: e.target.value})
-  }
   const handleSumbit = (e)=>{
     e.preventDefault();
-    if(values.firstName && values.lastName && values.email){
+    if(firstName && lastName && email){
       setValid(true)
     }
     setSubmitted(true)
@@ -31,13 +39,13 @@ export default function App() {
 
   return (
     <div class="form-container">
-      <Form values={values} 
-      onSubmit={handleSumbit}
+      <Form
+      handleSumbit={handleSumbit}
       submitted={submitted}
       valid={valid}
-      onChangeFirst={handleFirstNameInputChange}
-      onChangeLast={handleLastNameInputChange}
-      onChangeEmail={handleEmailInputChange}
+      sample={sample}
+      // onChangeLast={handleLastNameInputChange}
+      // onChangeEmail={handleEmailInputChange}
       />
     </div>
   );
